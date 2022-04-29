@@ -388,11 +388,100 @@ visibility: visible;
 }
 
 /* why choose us */
+.why .container {
+ overflow: auto;
+}
 
 .whyleft {
   font-family: "FontAwesome";
+  width: 50%;
+  float: left;
 }
 
-.whyleft p::before {
-   content: "f00c";
+.whyleft h2 {
+  font-size: 35px;
+text-transform: capitalize;
+margin-bottom: 50px;
+margin-top: 6px;
+position: relative;
+}
+
+.whyleft h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: blue;
+  bottom: 0;
+  left: 0% ;
+  margin-bottom: -10px;
+}
+
+.whyleft p {
+  padding-right: 20px;
+color: #999;
+line-height: 1.4;
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+.whyleft li {
+  list-style: none;
+  margin-bottom: 13px;
+color: #999;
+}
+
+.whyleft li::before {
+  content: "\f00c";
+  border: 1px solid #6195ff;
+color: #6195ff;
+padding: 3px;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+}
+
+.whyright{ 
+  float: left;
+  background: url(/images/rolls-royce-red-phantom.jpg);
+  width: 50%;
+  
+height: 400px;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.number {
+  position: relative;
+background: rgba(0,0,0,0.7) url(/images/eee.jpeg);
+background-blend-mode: multiply;
+height: 350px;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.numbers-items {
+  padding-top: 130px;
+}
+
+.number-item {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.number-item .icon {
+  color: #6195ff;
+  margin-bottom: 15px;
+}
+
+
+.number-item-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+.number-item-text {
+  color: #fff;
 }
