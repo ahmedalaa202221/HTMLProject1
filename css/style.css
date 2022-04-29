@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'varela round' , sans-serif;
-    
+    box-sizing: border-box;
 }
 
 html {
@@ -484,4 +484,162 @@ background-attachment: fixed;
 
 .number-item-text {
   color: #fff;
+}
+
+/* Pricing Table */
+
+.price {
+  padding: 120px 0;
+  background-color: lightgray;
+}
+
+.price h2 {
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+  margin:  50px 0;
+}
+
+.price h2::after {
+  content: "" ;
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: blue;
+  bottom: 0;
+  left: 47% ;
+  margin-bottom: -10px;
+}
+
+.pricecards {
+  overflow: auto;
+  
+}
+
+.pricecard {
+  float: left;
+width: 25%;
+padding: 30px 15px;
+border: 1px solid #a8a8a8;
+text-align: center;
+position: relative;
+}
+
+.pricecard::after {
+  position: absolute;
+content: "";
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+background-color: #0b0c0c;
+transition: .5s;
+opacity: .5;
+}
+
+.pricecard:hover::after {
+  height: 100%;
+}
+
+.mg {
+  margin: 0 5%;
+}
+
+
+.pricecard span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.pricecard h3{
+  font-size: 50px;
+}
+
+.circle{
+  width: 100px;
+height: 100px;
+padding: 8px 0;
+margin: 20px auto;
+border: 2px solid #6195ff;
+border-radius: 50%;
+}
+
+.pricecard:hover .circle{
+  color: rgb(245, 12, 12);
+}
+
+.pricecard p {
+  color: #999;
+line-height: 1.8;
+}
+
+.pricecard button {
+  border: 2px solid #6195ff;
+margin: auto;
+  margin-top: auto;
+padding: 4px;
+background-color: none;
+display: block;
+width: 120px;
+margin-top: 15px;
+transition: color .5s;
+}
+
+
+.testimonial {
+  position: relative;
+  background-image: url(../images/zzz.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 350px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.testimonial-content {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+
+.testimonial-item {
+  float: left;
+  width: 45%;
+  color: #fff;
+  padding-right: 20px;
+  padding-top: 55px;
+  margin-bottom: 110px;
+}
+
+.testimonial-toplayer {
+  padding: 90px 20px 10px 150px;
+  position: relative;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.testimonial-desc {
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-left: 76px;
+  font-size: 14px;
+}
+
+.testimonial-toplayer img {
+  position: absolute;
+  top: 82px;
+  left: 65px;
+  border-radius: 50%;
+}
+
+.testimonial-toplayer span {
+  color: #6195ff;
 }
